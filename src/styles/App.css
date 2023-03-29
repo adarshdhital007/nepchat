@@ -9,7 +9,7 @@ body {
   background-image: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
 }
 
-.auth {
+.room {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,15 +20,24 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.auth h3 {
+.room label {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #333;
-  text-align: center;
 }
 
-.auth button {
+.room input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.room button {
   padding: 10px;
   font-size: 1rem;
   font-weight: bold;
@@ -39,14 +48,14 @@ body {
   cursor: pointer;
   transition: background-color 0.2s;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   text-align: center;
 }
 
-.auth button:hover {
+.room button:hover {
   background-image: linear-gradient(135deg, #8fd3f4 0%, #84fab0 100%);
 }
 
-.auth button:focus {
+.room button:focus {
   outline: none;
 }
