@@ -28,7 +28,7 @@ function ChatApp() {
     <AppWrapper isAuth={isAuth} setIsAuth={setIsAuth} setIsInChat={setIsInChat}>
       {!isInChat ? (
         <div className="room">
-          <label> Type room name: </label>
+          <label> Type room name </label>
           <input onChange={(e) => setRoom(e.target.value)} />
           <button
             onClick={() => {

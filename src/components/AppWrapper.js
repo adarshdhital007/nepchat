@@ -11,6 +11,7 @@ export const AppWrapper = ({ children, isAuth, setIsAuth, setIsInChat }) => {
     cookies.remove("auth-token");
     setIsAuth(false);
     setIsInChat(false);
+    
   };
 
   return (
