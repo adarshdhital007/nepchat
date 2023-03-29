@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nepchat/static/css/main.9a63f216.css",
+    "main.js": "/nepchat/static/js/main.fe803fcd.js",
+    "index.html": "/nepchat/index.html",
+    "main.9a63f216.css.map": "/nepchat/static/css/main.9a63f216.css.map",
+    "main.fe803fcd.js.map": "/nepchat/static/js/main.fe803fcd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a63f216.css",
+    "static/js/main.fe803fcd.js"
+  ]
+}
