@@ -1,11 +1,12 @@
-.sign-out {
+.button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* This will align the buttons at each end of the container */
   width: 100%;
   margin: 20px 0;
 }
 
-.sign-out-button {
+.sign-out-button,
+.back-button {
   font-size: 1rem;
   padding: 12px 24px;
   background-color: #eb3b5a;
@@ -17,8 +18,32 @@
   transition: all 0.3s ease;
 }
 
-.sign-out-button:hover {
+.sign-out-button:hover,
+.back-button:hover {
   background-color: #c2354a;
   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.25);
   transform: translateY(-2px);
+}
+
+
+.app-header {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  animation: textColorChange 7s linear infinite;
+}
+
+@keyframes textColorChange {
+  0%, 100% {
+    color: red;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: yellow;
+  }
 }

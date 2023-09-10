@@ -1,4 +1,5 @@
 import { auth } from "../firebase-config.js";
+import React, { useState } from "react";
 import { signOut } from "firebase/auth";
 import Cookies from "universal-cookie";
 import "../styles/AppWrapper.css";
@@ -13,6 +14,10 @@ export const AppWrapper = ({ children, isAuth, setIsAuth, setIsInChat }) => {
     setIsInChat(false);
   };
 
+  const handleBackToRoomCreation = () => {
+    setIsInChat(false);
+  };
+
   return (
     <div className="App">
       <div className="app-header">
@@ -20,11 +25,15 @@ export const AppWrapper = ({ children, isAuth, setIsAuth, setIsInChat }) => {
       </div>
 
       <div className="app-container">{children}</div>
+
       {isAuth && (
-        <div className="sign-out">
-          {/* Add the 'sign-out-button' class name to the button element */}
+        <div className="button-container">
+         
           <button className="sign-out-button" onClick={signUserOut}>
             Sign Out
+          </button>
+          <button className="back-button" onClick={handleBackToRoomCreation}>
+            Back
           </button>
         </div>
       )}
