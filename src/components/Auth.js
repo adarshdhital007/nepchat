@@ -17,7 +17,7 @@ export const Auth = ({ setIsAuth }) => {
   };
   return (
     <div className="auth">
-      <h3>Messenger Made For Nepal</h3>
+      <h3>Realtime Messenger Demo Firebase</h3>
       <button onClick={signInWithGoogle}> Sign In With Google </button>
     </div>
   );

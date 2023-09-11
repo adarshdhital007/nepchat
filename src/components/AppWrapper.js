@@ -21,7 +21,7 @@ export const AppWrapper = ({ children, isAuth, setIsAuth, setIsInChat }) => {
   return (
     <div className="App">
       <div className="app-header">
-        <h1>NepChat</h1>
+        <h1>Realtime Chat using Firebase</h1>
       </div>
 
       <div className="app-container">{children}</div>
